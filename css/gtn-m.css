@@ -1,0 +1,26 @@
+.navbar-brand{
+    float: right;
+    margin-right: 100px;
+}
+#navbarSupportedContent{
+    margin-left: 100px;
+}
+#navbarSupportedContent .dropdown-menu{
+    width: max-content;
+    position: absolute;
+    display: flex;
+    top: 100px;
+}
+#navbarSupportedContent .dropdown-menu li{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+#navbarSupportedContent .dropdown-menu li a{
+    padding: 10px 40px;
+    color: black;
+}
+#navbarSupportedContent .dropdown-menu li a:hover{
+    background: #766DFF;
+    color: white;
+    cursor: pointer;
+}

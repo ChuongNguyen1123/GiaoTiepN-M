@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#menu{
+    width: 100%;
+    height: 200px;
+    position: fixed;
+}
+#tab-menu{
+    width: 100%;
+    height: 56px;
+    padding-top: 1px;
+    background: #0000c9;
+}
+#tab-menu .lap-menu{
+    list-style-type: none;
+    text-align: left;
+}
+#tab-menu .lap-menu li{
+    display: inline-block;
+}
+#tab-menu .lap-menu li a{
+    font-size: 20px;
+    padding: 17px 25px;
+    text-decoration: none;
+    color: white;
+}
+#tab-menu .lap-menu li a:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+#myNavbar{
+    width: 100%;
+    height: 50px;
+    margin-top: -16px;
+    background: rgb(199, 199, 199);
+}
+#myNavbar ul{
+    list-style-type: none;
+    text-align: left;
+    line-height: 48px;
+}
+#myNavbar ul li{
+    display: inline-block;
+}
+#myNavbar ul li a{
+    font-size: 20px;
+    padding: 13px 25px;
+    text-decoration: none;
+    color: black;
+}
+#myNavbar ul li a:hover{
+    background: #0000FF;
+    color: white;
+}
+#section1{
+    width: 100%;
+    height: 1000px;
+    padding-top: 150px;
+    background: whitesmoke;
+}
+#section2{
+    width: 100%;
+    height: 1000px;
+    padding-top: 150px;
+    background: #7F7F7F;
+}
+#section3{
+    width: 100%;
+    height: 1000px;
+    padding-top: 150px;
+}
+#section5{
+    width: 100%;
+    height: 1000px;
+    padding-top: 150px;
+    background: #7F7F7F;
+}

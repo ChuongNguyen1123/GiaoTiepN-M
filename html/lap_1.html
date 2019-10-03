@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Lap 1</title>
     <link rel="stylesheet" href="../css/lap_1.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.css">
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top" id="menu">
     <div id="tab-menu">
         <ul class="lap-menu">
             <li><a href="../index.html">Home</a></li>
-            <li><a>Lab 1</a></li>
-            <li><a>Lab 2</a></li>
+            <li><a href="lap_1.html">Lab 1</a></li>
+            <li><a href="lab_2.html">Lab 2</a></li>
             <li><a>Lab 3</a></li>
             <li><a>Lab 4</a></li>
         </ul>
@@ -59,37 +60,189 @@
         <h1>Design</h1>
         <h3 style="margin-left: 100px">design on paper</h3>
         <div class="design">
-            <img src="../Figma/hinhadd.jpg" height="300" width="400"/>
-            <button>Dowload</button>
+            <img src="../Figma/addpage.png" height="300" width="400"/>
+            <button><a href="../Figma/addpage.png" download="lap1_addSubject.jpg">Download</a>
+            </button>
         </div>
         <div class="design" style="margin-left: 15px">
-            <img src="../Figma/hinhSearch.jpg" height="300" width="400"/>
-            <button>Dowload</button>
+            <img src="../Figma/searchpage.png" height="300" width="400"/>
+            <button><a href="../Figma/searchpage.png" download="lab1_search.jpg">Dowload</a></button>
         </div>
         <div class="design" style="margin-left: 15px">
-            <img src="../Figma/hinhEdit.jpg" height="300" width="400"/>
-            <button>Dowload</button>
+            <img src="../Figma/editPage.png" height="300" width="400"/>
+            <button><a href="../Figma/editPage.png" download="lab1_edit.jpg">Dowload</a></button>
         </div>
         <h3 style="margin-left: 100px">Design on figma</h3>
         <div class="design">
             <img src="../Figma/Capture.PNG" height="300" width="400"/>
-            <button>Dowload</button>
+            <button><a href="../Figma/Capture.PNG" download="lab1_addFigma.jpg">Dowload</a></button>
         </div>
         <div class="design" style="margin-left: 15px">
             <img src="../Figma/delete.PNG" height="300" width="400"/>
-            <button>Dowload</button>
+            <button><a href="../Figma/delete.PNG" download="lab1_searchFigma.jpg">Dowload</a></button>
         </div>
         <div class="design" style="margin-left: 15px">
             <img src="../Figma/Sửa.PNG" height="300" width="400"/>
-            <button>Dowload</button>
+            <button><a href="../Figma/Sửa.PNG" download="lab1_editFigma.jpg">Dowload</a></button>
         </div>
     </div>
-    <button class="btn-dowload">Dowload All</button>
+    <button class="btn-dowload"><a href="../Figma/Lap1_Design.7z" download="lab1_design.7z" style="color: greenyellow">Dowload</a></button>
 </div>
 <div id="section3" class="container-fluid">
-    <h1>Implement</h1>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <h1 style="margin-left: 50px; margin-bottom: 30px">Implement</h1>
+    <div class="contain_add">
+        <h4 style="text-align: center">ADD SUBJECT</h4>
+        <div class="input_add">
+           <div class="row">
+               <label >Code Subject:</label>
+               <input type="text" class="code" style="width: 130px">
+           </div>
+            <div class="row" style="margin-left: -5px">
+                <label>Name Subject:</label>
+                <input type="text" class="code" style="width: 200px">
+            </div>
+            <div class="row" style="margin-left: 55px">
+                <label>STC:</label>
+                <input type="text" class="code" style="width: 50px">
+            </div>
+            <div class="row" style="margin-left: 25px">
+                <label>Semester: </label>
+                <input type="text" class="code" style="width: 50px">
+                <label>Year:</label>
+                <input type="text" class="code" style="width: 50px">
+            </div>
+        </div>
+        <div class="btn">
+            <button>Add</button>
+            <button>Cancel</button>
+        </div>
+    </div>
+
+    <div id="search">
+        <h4 style="text-align: center; margin-top: 0px">SEARCH</h4>
+        <p>Tiềm kiếm bằng cách nhập mã môn học ở thẻ input. Khi nhấn nút button thì sẽ hiện ra bảng bên dưới, dữ liệu trong bảng có được khi lưu ở phần ADD SUBJECR.</p>
+        <p>Cột cuối bảng có 2 thành phần Edit và Delete, khi nhấn Delete xẽ xóa hết dữ liệu ở hành vừa nhấn. Còn nhấn Edit sẽ mở hộp thoại EDITING lên. Tại hộp thoại người dùng có thể xóa, sửa lại thông tin.</p>
+        <div class="tab">
+            <div class="logo" style="width: 30px; height: 30px; float: right; margin-top: -60px; margin-bottom: 40px;margin-right: 90px">
+                <button style="width: 30px; height: 30px"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="tim" style="width: 150px; height: 30px; float: right; margin-top: -60px; margin-bottom: 40px">
+                <input type="text" class="input_search" style="width: 148px; height: 24px; outline: none; text-align: center">
+            </div>
+            <table>
+               <tr>
+                   <th style="background: #f4ff61">STT</th>
+                   <th style="background: #f4ff61">MMH</th>
+                   <th style="background: #f4ff61">Name Subject</th>
+                   <th style="background: #f4ff61">STC</th>
+                   <th style="background: #f4ff61">Semester</th>
+                   <th style="background: #f4ff61">Year</th>
+                   <th style="background: #f4ff61"></th>
+               </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a class="text" style="float: left">Edit</a>
+                        <a class="Dele" style="float: right">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a class="text" style="float: left">Edit</a>
+                        <a class="Dele" style="float: right">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a class="text" style="float: left">Edit</a>
+                        <a class="Dele" style="float: right">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a class="text" style="float: left">Edit</a>
+                        <a class="Dele" style="float: right">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a class="text" style="float: left">Edit</a>
+                        <a class="Dele" style="float: right">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a class="text" style="float: left">Edit</a>
+                        <a class="Dele" style="float: right">Delete</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="contain_add">
+        <h4 style="text-align: center">EDITING</h4>
+        <div class="input_add">
+            <div class="row">
+                <label >Code Subject:</label>
+                <input type="text" class="code" style="width: 130px">
+            </div>
+            <div class="row" style="margin-left: -5px">
+                <label>Name Subject:</label>
+                <input type="text" class="code" style="width: 200px">
+            </div>
+            <div class="row" style="margin-left: 55px">
+                <label>STC:</label>
+                <input type="text" class="code" style="width: 50px">
+            </div>
+            <div class="row" style="margin-left: 25px">
+                <label>Semester: </label>
+                <input type="text" class="code" style="width: 50px">
+                <label>Year:</label>
+                <input type="text" class="code" style="width: 50px">
+            </div>
+        </div>
+        <div class="btn">
+            <button style="margin-left: 40px">Save</button>
+            <button style="margin-left: 40px">Delete</button>
+            <button style="margin-left: 40px">Cancel</button>
+        </div>
+    </div>
 </div>
 </body>
 </html>

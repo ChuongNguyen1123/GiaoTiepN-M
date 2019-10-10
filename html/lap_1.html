@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lap 1</title>
+    <title>17130016-Nguyễn Việt Chương</title>
     <link rel="stylesheet" href="../css/lap_1.css">
     <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.css">
+    <script src="../js/gtn-m.js"></script>
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top" id="menu">
     <div id="tab-menu">
         <ul class="lap-menu">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="lap_1.html">Lab 1</a></li>
+            <li><a href="lap_1.html" >Lab 1</a></li>
             <li><a href="lab_2.html">Lab 2</a></li>
             <li><a>Lab 3</a></li>
             <li><a>Lab 4</a></li>
@@ -28,9 +29,9 @@
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#section1">Requinement</a></li>
-                    <li><a href="#section2">Design</a></li>
-                    <li><a href="#section3">Implement</a></li>
+                    <li><a href="#requinement"  id="lab" onclick="click('while')">Requinement</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#implement">Implement</a></li>
 <!--                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>-->
 <!--                        <ul class="dropdown-menu">-->
 <!--                            <li><a href="#section41">Section 4-1</a></li>-->
@@ -43,9 +44,8 @@
     </div>
 </div>
 
-<div id="section1" class="container-fluid">
-    <div id="contain">
-        <h1>Requinement</h1>
+<div id="requinement" class="container-fluid">
+    <div class="contain">
         <p>1. Yêu cầu: Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như sinh viên, môn học, giảng viên,… để thiết kế trên phần mềm một chức năng trên web để thêm, sửa, xóa,tìm kiếm cho đối tượng đó. </p>
         <p>2. Upload tất cả lên Azure / github trong menu Lab1 theo thứ tự: </p>
         <p style="margin-left: 150px"> Tab Yêu cầu: copy lại nội dung của phần 1 vào đây (trình bày cho đẹp)</p>
@@ -55,41 +55,39 @@
         <p style="margin-left: 150px"> Tab Hiện thực: chuyển tất cả thiết kế ở trên ở trên sang html</p>
     </div>
 </div>
-<div id="section2" class="container-fluid">
-    <div id="contain">
-        <h1>Design</h1>
+<div id="design" class="container-fluid">
+    <div class="contain">
         <h3 style="margin-left: 100px">design on paper</h3>
-        <div class="design">
+        <div class="design-de">
             <img src="../Figma/addpage.png" height="300" width="400"/>
             <button><a href="../Figma/addpage.png" download="lap1_addSubject.jpg">Download</a>
             </button>
         </div>
-        <div class="design" style="margin-left: 15px">
+        <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/searchpage.png" height="300" width="400"/>
             <button><a href="../Figma/searchpage.png" download="lab1_search.jpg">Dowload</a></button>
         </div>
-        <div class="design" style="margin-left: 15px">
+        <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/editPage.png" height="300" width="400"/>
             <button><a href="../Figma/editPage.png" download="lab1_edit.jpg">Dowload</a></button>
         </div>
         <h3 style="margin-left: 100px">Design on figma</h3>
-        <div class="design">
+        <div class="design-de">
             <img src="../Figma/Capture.PNG" height="300" width="400"/>
             <button><a href="../Figma/Capture.PNG" download="lab1_1.jpg">Dowload</a></button>
         </div>
-        <div class="design" style="margin-left: 15px">
+        <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/delete.PNG" height="300" width="400"/>
             <button><a href="../Figma/delete.PNG" download="lab1_2.jpg">Dowload</a></button>
         </div>
-        <div class="design" style="margin-left: 15px">
+        <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/Sửa.PNG" height="300" width="400"/>
             <button><a href="../Figma/Sửa.PNG" download="lab1_3.jpg">Dowload</a></button>
         </div>
     </div>
-    <button class="btn-dowload"><a href="../Figma/17130016_design.7z" download="17130016_design.7z" style="color: greenyellow">Dowload</a></button>
+    <button class="btn-dowload"><a href="../Figma/17130016_design.7z" download="17130016_design.7z" style="color: #15fe78; text-decoration: none">Dowload All</a></button>
 </div>
-<div id="section3" class="container-fluid">
-    <h1 style="margin-left: 50px; margin-bottom: 30px">Implement</h1>
+<div id="implement" class="container-fluid">
     <div class="contain_add">
         <h4 style="text-align: center">ADD SUBJECT</h4>
         <div class="input_add">

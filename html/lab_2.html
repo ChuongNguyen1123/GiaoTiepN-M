@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 2</title>
+    <title>17130016-Nguyễn Việt Chương</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.css">
     <link rel="stylesheet" href="../css/lab2.css">
 </head>
 <body>
@@ -27,10 +28,10 @@
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#section1">Requinement</a></li>
-                    <li><a href="#section5">User Scenario</a></li>
-                    <li><a href="#section2">Design</a></li>
-                    <li><a href="#section3">Implement</a></li>
+                    <li><a href="#requinement">Requinement</a></li>
+                    <li><a href="#scenario">User Scenario</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#implement">Implement</a></li>
                     <!--                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>-->
                     <!--                        <ul class="dropdown-menu">-->
                     <!--                            <li><a href="#section41">Section 4-1</a></li>-->
@@ -43,18 +44,81 @@
     </div>
 </div>
 
-<div id="section1" class="container-fluid">
-        <h1>Requinement</h1>
+<div id="requinement" class="container-fluid">
+    <div class="container">
+        <p>(1) Tạo ra một user scenario. </p>
+        <p>(2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương ứng cho thiết kế này.</p>
+        <p>(3) Upload lênAzure / github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
+    </div>
 </div>
-<div id="section5" class="container-fluid">
-    <h1>User Scenario</h1>
-</div>
-<div id="section2" class="container-fluid">
-    <h1>Design</h1>
-</div>
-<div id="section3" class="container-fluid">
-    <h1 style="margin-left: 50px; margin-bottom: 30px">Implement</h1>
+<div id="scenario" class="container-fluid">
+   <div class="container">
+       <img src="../img_lab2/user.PNG" height="501" width="797" style="margin: 0 220px;"/></div>
 </div>
 
+<div id="design" class="container-fluid">
+    <div id="container-page">
+        <h3 style="margin-left: 50px">Design on paper</h3>
+        <img src="../img_lab2/design_page.jpg" height="500" width="300" style="float: left;"/>
+            <button>
+                <a href="../img_lab2/design_page.jpg" download="lab2_design_page.jpg">Dowload</a>
+            </button>
+    </div>
+    <div id="container-figma">
+        <h3 style="margin-left: 50px">Design on Figma</h3>
+        <img src="../img_lab2/designFigma.PNG" height="500" width="700"/>
+        <button style="float: right; margin-right: 10px">
+            <a href="../img_lab2/designFigma.PNG" download="lab2_design_figma.jpg">Dowload</a>
+        </button>
+    </div>
+    <button style="width: 300px; height: 50px; font-size: 20px; margin-top: 0px; margin-left: 300px; background: rgba(4,4,41,0.98)">
+        <a href="../img_lab2/17130016_design.7z" download="17130016_lab2_design.7z" style="text-decoration: none; color: #20e907">Dowload All</a>
+    </button>
+</div>
+
+<div id="implement" class="container-fluid">
+    <div id="box-implement">
+        <div class="col-left">
+            <div class="row-mwc">
+                <img src="../img_lab2/mwc.jpg" height="400" width="385"/></div>
+            <div class="row-hinh">
+                <img src="../img_lab2/Natt5206_ngang.jpg" height="120" width="120" style="margin-left: 0px"/>
+                <img src="../img_lab2/Natt5206-d.jpg" height="120" width="120"/>
+                <img src="../img_lab2/Natt5026_n.jpg" height="120" width="120"/>
+            </div>
+        </div>
+        <div class="col-right">
+            <h3>Giày thể thao Nam MWC NATT - 5206</h3>
+            <h3 style="margin-left: 50px; font-size: 30px; color: #dd3018">250.000đ</h3>
+            <span style="font-size: 20px">Màu sắc:
+                <button class="btn-mau" style="background: black; color: white">Đen</button>
+                <button class="btn-mau" style="background: #b6b6b6">Xám</button>
+                <button class="btn-mau" style="background: #1dc116; color: white">Xanh</button>
+                <button class="btn-mau" style="background: white; color: black">Trắng</button>
+            </span>
+            <span>Size:
+                <button class="btn-size">36</button>
+                <button class="btn-size">37</button>
+                <button class="btn-size">38</button>
+                <button class="btn-size">39</button>
+                <button class="btn-size" style="margin-left: 55px">40</button>
+                <button class="btn-size">41</button>
+                <button class="btn-size">42</button>
+                <button class="btn-size" style="margin-bottom: 30px">43</button>
+            </span>
+            <span style="float: left">Số lượng:
+                <input type="button" id="input-giam" value="-" style="cursor: pointer;">
+                <input type="text" id="input-text" value="1" style="width: 30px; height: 28px; text-align: center; margin-left: -6px; margin-right: -6px" disabled>
+                <input type="button" id="input-tang" value="+" style="cursor: pointer;">
+                <a style="font-size: 16px; margin-left: 10px; font-style: italic; color: blue">Còn hàng</a>
+            </span>
+            <button id="shoping">
+                <i class="fas fa-shopping-cart"></i>
+                <a>Thêm vào giỏ hàng</a>
+            </button>
+            <button style="width: 120px; float: right; margin-right: 20px">Mua ngay</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>

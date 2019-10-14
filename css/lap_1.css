@@ -91,8 +91,12 @@ body{
     border: 1px solid green;
     border-radius: 5px;
 }
+#design .design-de button:hover{
+    background: #00d700;
+    cursor: pointer;
+}
 #design .design-de button a{
-    color: #b81310;
+    color: #ab0000;
     font-size: 15px;
     text-decoration: none;
 }
@@ -105,6 +109,10 @@ body{
     border: 1px solid #ffe603;
     border-radius: 10px;
     margin-top: 0px;
+}
+#design .btn-dowload:hover{
+    background: #db7706;
+    cursor: pointer;
 }
 #implement {
     padding-top:150px;

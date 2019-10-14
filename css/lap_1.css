@@ -92,11 +92,11 @@ body{
     border-radius: 5px;
 }
 #design .design-de button:hover{
-    background: #00d700;
+    background: #00ff00;
     cursor: pointer;
 }
 #design .design-de button a{
-    color: #ab0000;
+    color: #b81310;
     font-size: 15px;
     text-decoration: none;
 }
@@ -111,7 +111,7 @@ body{
     margin-top: 0px;
 }
 #design .btn-dowload:hover{
-    background: #db7706;
+    background: #ad8200;
     cursor: pointer;
 }
 #implement {

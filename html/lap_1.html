@@ -3,62 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>17130016-Nguyễn Việt Chương</title>
-    <link rel="stylesheet" href="../css/lap_1.css">
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.css">
-    <script src="../js/gtn-m.js"></script>
+    <link rel="stylesheet" href="../css/lap_1.css">
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" id="menu">
-    <div id="tab-menu">
-        <ul class="lap-menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="lap_1.html" >Lab 1</a></li>
-            <li><a href="lab_2.html">Lab 2</a></li>
-            <li><a>Lab 3</a></li>
-            <li><a>Lab 4</a></li>
-        </ul>
-    </div>
-    <div class="container-fluid">
-<!--        <div class="navbar-header">-->
-<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
-<!--                <span class="icon-bar"></span>-->
-<!--                <span class="icon-bar"></span>-->
-<!--                <span class="icon-bar"></span>-->
-<!--            </button>-->
-<!--        </div>-->
-        <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#requinement"  id="lab" onclick="click('while')">Requinement</a></li>
-                    <li><a href="#design">Design</a></li>
-                    <li><a href="#implement">Implement</a></li>
-<!--                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>-->
-<!--                        <ul class="dropdown-menu">-->
-<!--                            <li><a href="#section41">Section 4-1</a></li>-->
-<!--                            <li><a href="#section42">Section 4-2</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-                </ul>
-            </div>
-        </div>
-    </div>
+<div style="width: 100%; position: fixed">
+    <ul class="nav nav-tabs" id="menu-lab">
+        <li style="margin-left: 65px"><a href="../index.html" class="menu-li">Home</a></li>
+        <li><a href="lap_1.html" class="menu-li ac">Lab 1</a></li>
+        <li><a href="lab_2.html" class="menu-li">Lab 2</a></li>
+        <li><a href="lab_3.html" class="menu-li">Lab 3</a></li>
+        <li><a href="#" class="menu-li">Lab 4</a></li>
+    </ul>
+    <ul class="nav nav-tabs" id="sub-menu">
+        <li style="margin-left: 65px"><a href="#requinement">Requirement</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#implement">Implement</a></li>
+    </ul>
 </div>
 
 <div id="requinement" class="container-fluid">
     <div class="contain">
-        <h2>Requinement</h2>
-        <p>1. Yêu cầu: Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như sinh viên, môn học, giảng viên,… để thiết kế trên phần mềm một chức năng trên web để thêm, sửa, xóa,tìm kiếm cho đối tượng đó. </p>
+        <h2>Requirement</h2>
+        <p>1. Yêu cầu: Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như sinh viên, môn học, giảng viên,… để thiết
+            kế trên phần mềm một chức năng trên web để thêm, sửa, xóa,tìm kiếm cho đối tượng đó. </p>
         <p>2. Upload tất cả lên Azure / github trong menu Lab1 theo thứ tự: </p>
-        <p style="margin-left: 150px"> Tab Yêu cầu: copy lại nội dung của phần 1 vào đây (trình bày cho đẹp)</p>
-        <p style="margin-left: 150px"> Tab Thiết kế: để link tới các file sau đây: </p>
-        <p style="margin-left: 200px">. Thiết kế trên giấy (chụp lại ảnh) </p>
-        <p style="margin-left: 200px">. Thiết kế trên phần mềm thiết kế </p>
-        <p style="margin-left: 150px"> Tab Hiện thực: chuyển tất cả thiết kế ở trên ở trên sang html</p>
+        <p style="margin-left: 150px">- Tab Yêu cầu: copy lại nội dung của phần 1 vào đây (trình bày cho đẹp).</p>
+        <p style="margin-left: 150px">- Tab Thiết kế: để link tới các file sau đây: </p>
+        <p style="margin-left: 200px">+ Thiết kế trên giấy (chụp lại ảnh). </p>
+        <p style="margin-left: 200px">+ Thiết kế trên phần mềm thiết kế. </p>
+        <p style="margin-left: 150px">- Tab Hiện thực: chuyển tất cả thiết kế ở trên ở trên sang html.</p>
     </div>
 </div>
 <div id="design" class="container-fluid">
     <div class="contain">
-        <h3 style="margin-left: 100px">design on paper</h3>
+        <h2>Design</h2>
+        <h2 style="margin-left: 100px">Design on paper</h2>
         <div class="design-de">
             <img src="../Figma/addpage.png" height="300" width="400"/>
             <button><a href="../Figma/addpage.png" download="lap1_addSubject.jpg">Download</a>
@@ -66,79 +47,80 @@
         </div>
         <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/searchpage.png" height="300" width="400"/>
-            <button><a href="../Figma/searchpage.png" download="lab1_search.jpg">Dowload</a></button>
+            <button><a href="../Figma/searchpage.png" download="lab1_search.jpg">Download</a></button>
         </div>
         <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/editPage.png" height="300" width="400"/>
-            <button><a href="../Figma/editPage.png" download="lab1_edit.jpg">Dowload</a></button>
+            <button><a href="../Figma/editPage.png" download="lab1_edit.jpg">Download</a></button>
         </div>
-        <h3 style="margin-left: 100px">Design on figma</h3>
+        <h2 style="margin-left: 100px">Design on figma</h2>
         <div class="design-de">
             <img src="../Figma/Capture.PNG" height="300" width="400"/>
-            <button><a href="../Figma/Capture.PNG" download="lab1_1.jpg">Dowload</a></button>
+            <button><a href="../Figma/Capture.PNG" download="lab1_1.jpg">Download</a></button>
         </div>
         <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/delete.PNG" height="300" width="400"/>
-            <button><a href="../Figma/delete.PNG" download="lab1_2.jpg">Dowload</a></button>
+            <button><a href="../Figma/delete.PNG" download="lab1_2.jpg">Download</a></button>
         </div>
         <div class="design-de" style="margin-left: 15px">
             <img src="../Figma/Sửa.PNG" height="300" width="400"/>
-            <button><a href="../Figma/Sửa.PNG" download="lab1_3.jpg">Dowload</a></button>
+            <button><a href="../Figma/Sửa.PNG" download="lab1_3.jpg">Download</a></button>
         </div>
     </div>
-    <button class="btn-dowload"><a href="../Figma/17130016_design.7z" download="17130016_design.7z" style="color: #15fe78; text-decoration: none">Dowload All</a></button>
+    <button class="btn-dowload"><a href="../Figma/17130016_design.7z" download="17130016_design.7z"
+                                   style="color: #15fe78; text-decoration: none">Download All</a></button>
 </div>
 <div id="implement" class="container-fluid">
     <h2 style="margin-left: 60px">Implement</h2>
     <div class="contain_add">
-        <h4 style="text-align: center">ADD SUBJECT</h4>
+        <h4 style="text-align: center; font-size: 18px">ADD SUBJECT</h4>
         <div class="input_add">
-           <div class="row">
-               <label >Code Subject:</label>
-               <input type="text" class="code" style="width: 130px">
-           </div>
-            <div class="row" style="margin-left: -5px">
+            <div class="row">
+                <label>Code Subject:</label>
+                <input type="text" class="code" style="width: 130px">
+            </div>
+            <div class="row" style="margin-left: -19px">
                 <label>Name Subject:</label>
                 <input type="text" class="code" style="width: 200px">
             </div>
-            <div class="row" style="margin-left: 55px">
+            <div class="row" style="margin-left: 45px">
                 <label>STC:</label>
                 <input type="text" class="code" style="width: 50px">
             </div>
-            <div class="row" style="margin-left: 25px">
+            <div class="row" style="margin-left: 11px">
                 <label>Semester: </label>
                 <input type="text" class="code" style="width: 50px">
-                <label>Year:</label>
-                <input type="text" class="code" style="width: 50px">
+                <label style="margin-left: 30px">Year:</label>
+                <input type="text" class="code" style="width: 67px">
             </div>
         </div>
         <div class="btn">
-            <button>Add</button>
-            <button>Cancel</button>
+            <button style="float: left; margin-left: 83px">Add</button>
+            <button style="float: right; margin-right: 60px; margin-left: 0px">Cancel</button>
         </div>
     </div>
 
     <div id="search">
-        <h4 style="text-align: center; margin-top: 0px">SEARCH</h4>
-        <p>Tiềm kiếm bằng cách nhập mã môn học ở thẻ input. Khi nhấn nút button thì sẽ hiện ra bảng bên dưới, dữ liệu trong bảng có được khi lưu ở phần ADD SUBJECR.</p>
-        <p>Cột cuối bảng có 2 thành phần Edit và Delete, khi nhấn Delete xẽ xóa hết dữ liệu ở hành vừa nhấn. Còn nhấn Edit sẽ mở hộp thoại EDITING lên. Tại hộp thoại người dùng có thể xóa, sửa lại thông tin.</p>
+        <h4 style="text-align: center; margin-top: 0px; font-size: 18px">SEARCH</h4>
+        <p style="font-size: 15px">Tiềm kiếm bằng cách nhập mã môn học ở thẻ input. Khi nhấn nút button thì sẽ hiện ra bảng bên dưới, dữ liệu
+            trong bảng có được khi lưu ở phần ADD SUBJECR.</p>
+        <p style="font-size: 15px">Cột cuối bảng có 2 thành phần Edit và Delete, khi nhấn Delete xẽ xóa hết dữ liệu ở hành vừa nhấn. Còn nhấn
+            Edit sẽ mở hộp thoại EDITING lên. Tại hộp thoại người dùng có thể xóa, sửa lại thông tin.</p>
         <div class="tab">
-            <div class="logo" style="width: 30px; height: 30px; float: right; margin-top: -60px; margin-bottom: 40px;margin-right: 90px">
-                <button style="width: 30px; height: 30px"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="tim" style="width: 150px; height: 30px; float: right; margin-top: -60px; margin-bottom: 40px">
-                <input type="text" class="input_search" style="width: 148px; height: 24px; outline: none; text-align: center">
+            <div class="logo" style="margin-top: -60px; margin-bottom: 40px">
+                <button style="width: 30px; height: 30px; float: right; margin-right: 90px"><i class="fas fa-search"></i></button>
+                <input type="text" class="input_search" style="width: 148px; height: 30px; float: right; outline: none; text-align: center">
             </div>
             <table>
-               <tr>
-                   <th style="background: #f4ff61">STT</th>
-                   <th style="background: #f4ff61">MMH</th>
-                   <th style="background: #f4ff61">Name Subject</th>
-                   <th style="background: #f4ff61">STC</th>
-                   <th style="background: #f4ff61">Semester</th>
-                   <th style="background: #f4ff61">Year</th>
-                   <th style="background: #f4ff61"></th>
-               </tr>
+                <tr>
+                    <th style="background: #f4ff61">STT</th>
+                    <th style="background: #f4ff61">MMH</th>
+                    <th style="background: #f4ff61">Name Subject</th>
+                    <th style="background: #f4ff61">STC</th>
+                    <th style="background: #f4ff61">Semester</th>
+                    <th style="background: #f4ff61">Year</th>
+                    <th style="background: #f4ff61"></th>
+                </tr>
                 <tr>
                     <td></td>
                     <td></td>
@@ -147,8 +129,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a class="text" style="float: left">Edit</a>
-                        <a class="Dele" style="float: right">Delete</a>
+                        <a class="text" style="float: left; color: red">Edit</a>
+                        <a class="Dele" style="float: right; color: red">Delete</a>
                     </td>
                 </tr>
                 <tr>
@@ -159,8 +141,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a class="text" style="float: left">Edit</a>
-                        <a class="Dele" style="float: right">Delete</a>
+                        <a class="text" style="float: left; color: red">Edit</a>
+                        <a class="Dele" style="float: right; color: red">Delete</a>
                     </td>
                 </tr>
                 <tr>
@@ -171,8 +153,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a class="text" style="float: left">Edit</a>
-                        <a class="Dele" style="float: right">Delete</a>
+                        <a class="text" style="float: left; color: red">Edit</a>
+                        <a class="Dele" style="float: right; color: red">Delete</a>
                     </td>
                 </tr>
                 <tr>
@@ -183,8 +165,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a class="text" style="float: left">Edit</a>
-                        <a class="Dele" style="float: right">Delete</a>
+                        <a class="text" style="float: left; color: red">Edit</a>
+                        <a class="Dele" style="float: right; color: red">Delete</a>
                     </td>
                 </tr>
                 <tr>
@@ -195,8 +177,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a class="text" style="float: left">Edit</a>
-                        <a class="Dele" style="float: right">Delete</a>
+                        <a class="text" style="float: left; color: red">Edit</a>
+                        <a class="Dele" style="float: right; color: red">Delete</a>
                     </td>
                 </tr>
                 <tr>
@@ -207,8 +189,8 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a class="text" style="float: left">Edit</a>
-                        <a class="Dele" style="float: right">Delete</a>
+                        <a class="text" style="float: left; color: red">Edit</a>
+                        <a class="Dele" style="float: right; color: red">Delete</a>
                     </td>
                 </tr>
             </table>
@@ -216,33 +198,44 @@
     </div>
 
     <div class="contain_add">
-        <h4 style="text-align: center">EDITING</h4>
+        <h4 style="text-align: center; font-size: 18px">EDITING</h4>
         <div class="input_add">
             <div class="row">
-                <label >Code Subject:</label>
+                <label style="font-size: 15px">Code Subject:</label>
                 <input type="text" class="code" style="width: 130px">
             </div>
-            <div class="row" style="margin-left: -5px">
-                <label>Name Subject:</label>
+            <div class="row" style="margin-left: -19px">
+                <label style="font-size: 15px">Name Subject:</label>
                 <input type="text" class="code" style="width: 200px">
             </div>
-            <div class="row" style="margin-left: 55px">
-                <label>STC:</label>
+            <div class="row" style="margin-left: 45px">
+                <label style="font-size: 15px">STC:</label>
                 <input type="text" class="code" style="width: 50px">
             </div>
-            <div class="row" style="margin-left: 25px">
-                <label>Semester: </label>
+            <div class="row" style="margin-left: 11px">
+                <label style="font-size: 15px">Semester: </label>
                 <input type="text" class="code" style="width: 50px">
-                <label>Year:</label>
-                <input type="text" class="code" style="width: 50px">
+                <label style="margin-left: 30px; font-size: 15px">Year:</label>
+                <input type="text" class="code" style="width: 67px">
             </div>
         </div>
         <div class="btn">
-            <button style="margin-left: 40px">Save</button>
+            <button style="margin-left: 0px">Save</button>
             <button style="margin-left: 40px">Delete</button>
             <button style="margin-left: 40px">Cancel</button>
         </div>
     </div>
 </div>
+<script>
+    var header = document.getElementById("menu-lab");
+    var btns = header.getElementsByClassName("menu-li");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("ac");
+            current[0].className = current[0].className.replace(" ac", "");
+            this.className += " ac";
+        });
+    }
+</script>
 </body>
 </html>

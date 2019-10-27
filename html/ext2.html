@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/ex2.css">
+</head>
+<body>
+<div id="container">
+    <ul class="nav nav-tabs" id="menu-lab">
+        <li style="margin-left: 65px"><a href="../index.html" class="menu-li">Home</a></li>
+        <li><a href="lap_1.html" class="menu-li">Lab 1</a></li>
+        <li><a href="lab_2.html" class="menu-li">Lab 2</a></li>
+        <li><a href="lab_3.html" class="menu-li action">Lab 3</a></li>
+        <li><a href="#" class="menu-li">Lab 4</a></li>
+    </ul>
+    <ul class="nav nav-tabs" id="menu-ex2">
+        <li style="margin-left: 65px"><a href="lab_3.html" class="menu-a-ex2">Requinement</a></li>
+        <li><a href="../html/ext1.html" class="menu-a-ex2">Ex1</a></li>
+        <li><a href="../html/ext2.html" class="menu-a-ex2 ac">Ex2</a></li>
+    </ul>
+    <ul class="nav nav-tabs" id="sub-menu">
+        <li style="margin-left: 65px"><a href="#design">Design</a></li>
+        <li><a href="#implement">Implement</a></li>
+    </ul>
+</div>
+<script>
+    var header = document.getElementById("menu-lab");
+    var btns = header.getElementsByClassName("menu-li");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("action");
+            current[0].className = current[0].className.replace(" action", "");
+            this.className += " action";
+        });
+    }
+</script>
+
+<script>
+    var header = document.getElementById("menu-ex2");
+    var btns = header.getElementsByClassName("menu-a-ex2");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("ac");
+            current[0].className = current[0].className.replace(" ac", "");
+            this.className += " ac";
+        });
+    }
+</script>
+</body>
+</html>

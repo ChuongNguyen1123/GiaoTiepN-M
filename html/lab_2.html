@@ -3,50 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>17130016-Nguyễn Việt Chương</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../fontawesome-free-5.10.2-web/css/all.css">
     <link rel="stylesheet" href="../css/lab2.css">
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" id="menu">
-    <div id="tab-menu">
-        <ul class="lap-menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="lap_1.html">Lab 1</a></li>
-            <li><a href="lab_2.html">Lab 2</a></li>
-            <li><a>Lab 3</a></li>
-            <li><a>Lab 4</a></li>
-        </ul>
-    </div>
-    <div class="container-fluid">
-        <!--        <div class="navbar-header">-->
-        <!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
-        <!--                <span class="icon-bar"></span>-->
-        <!--                <span class="icon-bar"></span>-->
-        <!--                <span class="icon-bar"></span>-->
-        <!--            </button>-->
-        <!--        </div>-->
-        <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#requinement">Requinement</a></li>
-                    <li><a href="#scenario">User Scenario</a></li>
-                    <li><a href="#design">Design</a></li>
-                    <li><a href="#implement">Implement</a></li>
-                    <!--                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>-->
-                    <!--                        <ul class="dropdown-menu">-->
-                    <!--                            <li><a href="#section41">Section 4-1</a></li>-->
-                    <!--                            <li><a href="#section42">Section 4-2</a></li>-->
-                    <!--                        </ul>-->
-                    <!--                    </li>-->
-                </ul>
-            </div>
-        </div>
-    </div>
+<div style="width: 100%; position: fixed">
+    <ul class="nav nav-tabs" id="menu-lab">
+        <li style="margin-left: 65px"><a href="../index.html" class="menu-li">Home</a></li>
+        <li><a href="lap_1.html" class="menu-li">Lab 1</a></li>
+        <li><a href="lab_2.html" class="menu-li ac">Lab 2</a></li>
+        <li><a href="lab_3.html" class="menu-li">Lab 3</a></li>
+        <li><a href="#" class="menu-li">Lab 4</a></li>
+    </ul>
+    <ul class="nav nav-tabs" id="sub-menu">
+        <li style="margin-left: 65px"><a href="#requinement">Requirement</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#implement">Implement</a></li>
+    </ul>
 </div>
 
 <div id="requinement" class="container-fluid">
     <div class="container">
-        <h2>Requinement</h2>
+        <h2>Requirement</h2>
         <p>(1) Tạo ra một user scenario. </p>
         <p>(2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương ứng cho thiết kế này.</p>
         <p>(3) Upload lênAzure / github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
@@ -59,22 +38,23 @@
 </div>
 
 <div id="design" class="container-fluid">
+    <h2 style="margin-left: 65px">Design</h2>
     <div id="container-page">
         <h3 style="margin-left: 50px">Design on paper</h3>
         <img src="../img_lab2/design_page.jpg" height="500" width="300" style="float: left;"/>
             <button>
-                <a href="../img_lab2/design_page.jpg" download="lab2_design_page.jpg">Dowload</a>
+                <a href="../img_lab2/design_page.jpg" download="lab2_design_page.jpg">Download</a>
             </button>
     </div>
     <div id="container-figma">
         <h3 style="margin-left: 50px">Design on Figma</h3>
         <img src="../img_lab2/designFigma.PNG" height="500" width="700"/>
         <button style="float: right; margin-right: 10px">
-            <a href="../img_lab2/designFigma.PNG" download="lab2_design_figma.jpg">Dowload</a>
+            <a href="../img_lab2/designFigma.PNG" download="lab2_design_figma.jpg">Download</a>
         </button>
     </div>
-    <button style="width: 300px; height: 50px; font-size: 20px; margin-top: 0px; margin-left: 300px; background: rgba(4,4,41,0.98)">
-        <a href="../img_lab2/17130016_design.7z" download="17130016_lab2_design.7z" style="text-decoration: none; color: #20e907">Dowload All</a>
+    <button class="down-all">
+        <a href="../img_lab2/17130016_design.7z" download="17130016_lab2_design.7z" style="text-decoration: none; color: #15fe78">Download All</a>
     </button>
 </div>
 
@@ -87,7 +67,7 @@
             <div class="row-hinh">
                 <img src="../img_lab2/Natt5206_ngang.jpg" height="120" width="120" style="margin-left: 0px"/>
                 <img src="../img_lab2/Natt5206-d.jpg" height="120" width="120"/>
-                <img src="../img_lab2/Natt5026_n.jpg" height="120" width="120"/>
+                <img src="../img_lab2/Natt5026_n.jpg" height="120" width="120" style="float: right; margin-left: 0px; margin-right: -12px"/>
             </div>
         </div>
         <div class="col-right">
@@ -123,5 +103,16 @@
         </div>
     </div>
 </div>
+<script>
+    var header = document.getElementById("menu-lab");
+    var btns = header.getElementsByClassName("menu-li");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("ac");
+            current[0].className = current[0].className.replace(" ac", "");
+            this.className += " ac";
+        });
+    }
+</script>
 </body>
 </html>

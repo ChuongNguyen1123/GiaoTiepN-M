@@ -1,65 +1,39 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: "Roboto", sans-serif;
 }
-#menu{
-    width: 100%;
-    height: 200px;
-    position: fixed;
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-#tab-menu{
-    width: 100%;
-    height: 56px;
-    padding-top: 1px;
-    background: #7FB0FF;
-}
-#tab-menu .lap-menu{
-    list-style-type: none;
-    text-align: left;
-}
-#tab-menu .lap-menu li{
-    display: inline-block;
-}
-#tab-menu .lap-menu li a{
-    font-size: 22px;
-    padding: 17px 25px 14px;
-    text-decoration: none;
-    color: white;
-}
-#tab-menu .lap-menu li a:hover{
-    background: white;
-    color: black;
-    cursor: pointer;
-}
-#myNavbar{
+.nav-tabs {
     width: 100%;
     height: 50px;
-    margin-top: -16px;
-    background: #88F3FF;
+    /*background: #7FB0FF;*/
+    background: #AB6FAD;
 }
-#myNavbar ul{
-    list-style-type: none;
-    text-align: left;
-    line-height: 48px;
-}
-#myNavbar ul li{
-    display: inline-block;
-}
-#myNavbar ul li a{
+.nav-tabs li a {
     font-size: 22px;
-    padding: 14px 25px;
+    padding: 12px 25px;
+    line-height: 50px;
     text-decoration: none;
-    color: black;
+    color: yellow;
 }
-#myNavbar ul li a:hover{
-    background: #7FB0FF;
-    color: white;
+.nav-tabs li .ac, .menu-li:hover{
+    background: #766dff;
+    /*color: white;*/
+}
+.nav-tabs li a:hover {
+    background: #766dff;
+    /*color: white;*/
 }
 #requinement {
-    padding-top:150px;
-    height:500px;
-    color: black;
-    background: #f2f3ff;
+    padding-top:120px;
+    color: white;
+    /*background: #f2f3ff;*/
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 .contain{
     width: 1250px;
@@ -67,38 +41,43 @@ body{
     margin-left: 65px;
 }
 .contain p{
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 100px;
 }
 #design{
-    padding-top:150px;
+    padding-top:120px;
     height:1400px;
-    color: black;
-    background: #f6fff4;
+    color: white;
+    /*background: #f6fff4;*/
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 #design .design-de{
     width: 400px;
     height: 350px;
     float: left;
     margin-bottom: 30px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 #design .design-de button{
-    padding: 9px 20px;
+    padding: 9px 0px;
     margin-left: 146px;
     margin-top: 8px;
-    background: rgba(205, 255, 213, 0.78);
-    border: 1px solid green;
+    background: red;
+    border: 1px solid #AB6FAD;
     border-radius: 5px;
 }
 #design .design-de button:hover{
-    background: #00ff00;
+    background: #ffa2a2;
     cursor: pointer;
 }
 #design .design-de button a{
-    color: #b81310;
+    padding: 11px 20px;
+    color: #88f3ff;
     font-size: 15px;
     text-decoration: none;
+}
+#design .design-de button a:hover{
+    color: #6a0b6d;
 }
 #design .btn-dowload{
     width: 400px;
@@ -115,10 +94,11 @@ body{
     cursor: pointer;
 }
 #implement {
-    padding-top:150px;
+    padding-top:120px;
     width: 100%;
     height:1000px;
-    color: black;
+    /*color: white;*/
+    /*background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);*/
 }
 #implement .contain_add{
     width: 430px;
@@ -131,13 +111,19 @@ body{
 }
 #implement .contain_add .input_add{
     text-align: left;
-    margin-left: 50px;
+    margin-left: 75px;
 }
 #implement .contain_add .input_add .row{
+    display: block;
     margin-top: 20px;
+    margin-bottom: -10px;
+}
+#implement .contain_add .input_add .row label{
+    font-size: 15px;
 }
 #implement .contain_add .input_add input{
     padding: 5px;
+    margin-left: 10px;
 }
 #implement .btn{
     width: 100%;
@@ -158,7 +144,6 @@ body{
 }
 #implement #search .tab{
     width: 650px;
-    height: 300px;
     padding: 125px 30px 30px;
     border: 1px solid black;
     background: #e6e6e6;

@@ -3,10 +3,19 @@ body{
     padding: 0px;
     font-family: Arial;
 }
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#container{
+    width: 100%;
+    position: fixed;
+}
 .nav-tabs{
     width: 100%;
     height: 50px;
-    background: #7FB0FF;
+    background-image: -webkit-linear-gradient(0deg, #f39af5 0%, #AB6FAD 100%);
 }
 .nav-tabs li{
 }
@@ -15,37 +24,101 @@ body{
     padding: 12px 25px;
     line-height: 50px;
     text-decoration: none;
-    color: white;
+    color: yellow;
 }
 .nav-tabs li .action, .menu-li:hover{
-    background: white;
-    color: black;
+    background: #766dff;
+    /*color: black;*/
 }
 .nav-tabs li .ac, .menu-a-ex2:hover{
-    background: white;
-    color: black;
+    background: #766dff;
+    /*color: black;*/
 }
 .nav-tabs li a:hover{
-    background: white;
-    color: black;
+    background: #766dff;
+    /*color: black;*/
 }
 #sub-menu {
-    background: #88F3FF;
+    background-image: -webkit-linear-gradient(0deg, #f39af5 0%, #AB6FAD 100%);
 }
 #sub-menu li a{
-    color: black;
+    color: yellow;
 }
 #sub-menu li a:hover{
-    background: #7FB0FF;
-    color: white;
+    background: #766dff;
+    /*color: white;*/
 }
-#requinement{
+#design{
     width: 100%;
-    height: 520px;
-    padding-top: 50px;
-    background: rgba(4, 155, 255, 0.11);
+    height: 1500px;
+    padding-top: 175px;
+    color: white;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
-#requinement .container{
-    margin-left: 65px;
-
+#design #contain{
+    margin-left: 100px;
+}
+#design .design-pager{
+    width: 47%;
+    overflow: auto;
+    float: left;
+    clear: right;
+    margin-left: 1%;
+    margin-bottom: 50px;
+}
+.btn-down{
+    width: 25%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+#design .design-figma{
+    width: 47%;
+    overflow: auto;
+    float: right;
+    margin-right: 1%;
+    margin-bottom: 50px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: red;
+    border: 1px solid #AB6FAD;
+    border-radius: 10px;
+}
+button:hover{
+    background: #ffa2a2;
+    cursor: pointer;
+}
+button a{
+    padding: 11px 45px;
+    margin-left: -6px;
+    text-decoration: none!important;
+    color: #88f3ff;
+    font-size: 15px;
+}
+button a:hover{
+    color: #6a0b6d;
+}
+#design .dowall{
+    width: 25%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+#design .dowall .btn{
+    width: 100%;
+    height: 50px;
+    background: #a00000;
+    border: 2px solid #ffe603;
+    border-radius: 10px;
+}
+#design .dowall .btn:hover{
+    background: #ad8200;
+    cursor: pointer;
+}
+#design .dowall .btn a{
+    font-size: 18px;
+    color: #15fe78;
+    text-decoration: none;
 }

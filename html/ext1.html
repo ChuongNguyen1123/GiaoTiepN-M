@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/ex1.css">
 </head>
 <body>
 <div id="container">
     <ul class="nav nav-tabs" id="menu-lab">
-        <li style="margin-left: 65px"><a href="../index.html" class="menu-li">Home</a></li>
-        <li><a href="lap_1.html" class="menu-li">Lab 1</a></li>
-        <li><a href="lab_2.html" class="menu-li">Lab 2</a></li>
-        <li><a href="lab_3.html" class="menu-li ac">Lab 3</a></li>
-        <li><a href="#" class="menu-li">Lab 4</a></li>
+        <li style="margin-left: 65px"><a href="../index.html" class="menu-li">HOME</a></li>
+        <li><a href="lap_1.html" class="menu-li">LAB 1</a></li>
+        <li><a href="lab_2.html" class="menu-li">LAB 2</a></li>
+        <li><a href="lab_3.html" class="menu-li ac">LAB 3</a></li>
+        <li><a href="#" class="menu-li">LAB 4</a></li>
     </ul>
     <ul class="nav nav-tabs" id="menu-ex">
         <li style="margin-left: 65px"><a href="lab_3.html" class="menu-a">Requirement</a></li>
@@ -25,11 +25,41 @@
         <li><a href="#implement">Implement</a></li>
     </ul>
 </div>
+
+<div id="design">
+    <div id="contain">
+        <h2>Design</h2>
+    </div>
+    <div class="design-pager">
+        <h2 style="text-align: center">Design on paper</h2>
+        <img src="../img_lap3/img_ex1/design_page.jpg" height="700" width="634"/>
+        <div class="btn-down">
+            <button>
+                <a href="../img_lap3/img_ex1/design_page.jpg" download="lap3_ex1_design_page.jpg">Download</a>
+            </button>
+        </div>
+    </div>
+    <div class="design-figma">
+        <h2 style="text-align: center">Design on figma</h2>
+        <img src="../img_lap3/img_ex1/design_Figma.png" height="700" width="634"/>
+        <div class="btn-down">
+            <button>
+                <a href="../img_lap3/img_ex1/design_Figma.png" download="lap3_ex1_design_figma.jpg">Download</a>
+            </button>
+        </div>
+    </div>
+    <div class="dowall">
+        <button class="btn">
+            <a href="../img_lap3/img_ex1/17130016_Design_ex1.7z" download="17130016_Design_ex1.7z">Download All</a>
+        </button>
+    </div>
+</div>
+
 <script>
     var header = document.getElementById("menu-lab");
     var btns = header.getElementsByClassName("menu-li");
     for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
+        btns[i].addEventListener("click", function () {
             var current = document.getElementsByClassName("ac");
             current[0].className = current[0].className.replace(" ac", "");
             this.className += " ac";
@@ -41,7 +71,7 @@
     var header = document.getElementById("menu-ex");
     var btns = header.getElementsByClassName("menu-a");
     for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
+        btns[i].addEventListener("click", function () {
             var current = document.getElementsByClassName("active");
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";

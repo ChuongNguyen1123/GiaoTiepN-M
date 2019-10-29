@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
 </head>
 <style>
     body {
@@ -12,10 +12,21 @@
         font-family: Arial;
     }
 
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-left: 100px;
+    }
+
     .nav-tabs {
         width: 100%;
         height: 50px;
-        background: #7FB0FF;
+        background-image: -webkit-linear-gradient(0deg, #f39af5 0%, #AB6FAD 100%);
     }
 
     .nav-tabs li a {
@@ -23,16 +34,17 @@
         padding: 12px 25px;
         line-height: 50px;
         text-decoration: none;
-        color: white;
+        color: yellow;
     }
-    .nav-tabs li .ac, .menu-li:hover{
-        background: white;
-        color: black;
+
+    .nav-tabs li .ac, .menu-li:hover {
+        background: #766dff;
+        /*color: black;*/
     }
 
     .nav-tabs li .acti, .menu-li:hover {
-        background: white;
-        color: black;
+        background: #766dff;
+        /*color: black;*/
     }
 
     .nav-tabs li a:hover {
@@ -43,22 +55,22 @@
     #requinement {
         width: 100%;
         height: 520px;
-        padding-top: 50px;
-        background: rgba(4, 155, 255, 0.11);
+        padding-top: 20px;
+        color: white;
+        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
     }
 
     #requinement .container {
         margin-left: 65px;
-
     }
 </style>
 <body>
 <ul class="nav nav-tabs" id="menu-lab">
-    <li style="margin-left: 65px"><a href="../index.html" class="menu-li">Home</a></li>
-    <li><a href="lap_1.html" class="menu-li">Lab 1</a></li>
-    <li><a href="lab_2.html" class="menu-li">Lab 2</a></li>
-    <li><a href="lab_3.html" class="menu-li ac">Lab 3</a></li>
-    <li><a href="#" class="menu-li">Lab 4</a></li>
+    <li style="margin-left: 65px"><a href="../index.html" class="menu-li">HOME</a></li>
+    <li><a href="lap_1.html" class="menu-li">LAB 1</a></li>
+    <li><a href="lab_2.html" class="menu-li">LAB 2</a></li>
+    <li><a href="lab_3.html" class="menu-li ac">LAB 3</a></li>
+    <li><a href="#" class="menu-li">LAB 4</a></li>
 </ul>
 <ul class="nav nav-tabs" id="sub-menu">
     <li style="margin-left: 65px"><a href="#requinement" class="menu-li acti">Requirement</a></li>
@@ -69,8 +81,17 @@
 <div id="requinement" class="container-fluid">
     <div class="container">
         <h2>Requirement</h2>
+        <p>Tạo 1 menu Lab3 (file lab3.html) sau đó tạo 2 tab Ex1, Ex2</p>
+        <p style="margin-left: 120px">- Ex1: Thiết kế một trang Web đơn giản sử dụng mẫu F-pattern ==> chuyển sang html (ex1.html).</p>
+        <p style="margin-left: 120px">- Ex2: Thiết kế một trang Web sử dụng mẫu Z-pattern ==> chuyển sang html (ex2.html).</p>
+        <p style="margin-left: 120px">- Với cả Ex1, Ex2: Tạo 2 tab Design và Implementation:</p>
+        <p style="margin-left: 150px">+) Design: Chụp lại hình ảnh để có cái nhìn tổng quan về file thiết kế, có nút Download để download file
+            thiết kế về nếu muốn.</p>
+        <p style="margin-left: 150px">+) Implementation: nội dung phần hiện thực trên html.</p>
+        <p style="margin-left: 120px">- Upload lên Github.</p>
     </div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

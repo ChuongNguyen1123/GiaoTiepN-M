@@ -12,7 +12,8 @@ h2{
     width: 100%;
     height: 50px;
     /*background: #7FB0FF;*/
-    background: #AB6FAD;
+    background-image: -webkit-linear-gradient(0deg, #f39af5 0%, #AB6FAD 100%);
+    /*background: #AB6FAD;*/
 }
 .nav-tabs li a {
     font-size: 22px;
@@ -38,7 +39,7 @@ h2{
 .contain{
     width: 1250px;
     height: 900px;
-    margin-left: 65px;
+    margin-left: 80px;
 }
 .contain p{
     font-size: 15px;

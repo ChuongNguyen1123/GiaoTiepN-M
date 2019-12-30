@@ -56,7 +56,8 @@ h2{
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 #design #contain{
-    margin-left: 100px;
+    width: 100%;
+    margin: auto;
 }
 #design .design-pager{
     width: 47%;
@@ -67,7 +68,7 @@ h2{
     margin-bottom: 50px;
 }
 .btn-down{
-    width: 25%;
+    width: 30%;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -156,7 +157,7 @@ button a:hover{
     border-radius: 0px;
 }
 #implement #f-pattern #im-menu{
-    width: 58%;
+    width: 55%;
     height: 100%;
     float: right;
     background: #FDFAFA;
@@ -164,7 +165,7 @@ button a:hover{
 #implement #f-pattern #im-menu li a{
     font-size: 20px;
     line-height: 80px;
-    padding: 10px 35px 27px;
+    padding: 10px 25px 27px;
     color: #c50000;
 }
 #implement #f-pattern #im-menu li a:hover{
@@ -174,7 +175,7 @@ button a:hover{
     cursor: pointer;
 }
 #implement #f-pattern .col1{
-    width: 60%;
+    width: 70%;
     height: 250px;
     margin: auto;
     margin-top: 50px;

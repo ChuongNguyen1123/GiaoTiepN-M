@@ -70,7 +70,7 @@ span {
 }
 
 .container {
-    width: 1250px;
+    width: 100%;
     height: 900px;
     margin-left: 65px;
 }
@@ -87,15 +87,16 @@ span {
     width: 100%;
     height: 1000px;
     padding-top: 120px;
+    padding-right: 0px;
     color: white;
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 #design .down-all{
-    width: 300px;
+    width: 30%;
     height: 50px;
     font-size: 20px;
     margin-top: 0px;
-    margin-left: 300px;
+    margin-left: 35%;
     background: #a00000;
     border: 1px solid #ffe603;
     border-radius: 10px;
@@ -106,13 +107,14 @@ span {
 }
 
 #design #container-page {
-    width: 450px;
+    width: 35%;
     height: 600px;
     float: left;
     clear: right;
-    margin-left: 30px;
 }
 #design #container-page button{
+    width: 27%;
+    margin-left: 1%;
     background: red;
     border: 1px solid #AB6FAD;
 }
@@ -132,12 +134,14 @@ span {
 }
 
 #design #container-figma {
-    width: 820px;
+    width: 60%;
     height: 600px;
     float: right;
-    margin-right: 15px;
+    /*margin-left: 2%;*/
 }
 #design #container-figma button{
+    width: 13%;
+    margin-left: 1%;
     background: red;
     border: 1px solid #AB6FAD;
 }

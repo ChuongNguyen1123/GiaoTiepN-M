@@ -37,7 +37,6 @@ h2{
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 .contain{
-    width: 1250px;
     height: 900px;
     margin-left: 80px;
 }
@@ -53,7 +52,7 @@ h2{
     background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
 }
 #design .design-de{
-    width: 400px;
+    width: 32%;
     height: 350px;
     float: left;
     margin-bottom: 30px;
@@ -81,10 +80,10 @@ h2{
     color: #6a0b6d;
 }
 #design .btn-dowload{
-    width: 400px;
+    width: 30%;
     height: 50px;
     font-size: 20px;
-    margin-left: 480px;
+    margin-left: 35%;
     background: #a00000;
     border: 1px solid #ffe603;
     border-radius: 10px;
@@ -102,11 +101,11 @@ h2{
     /*background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);*/
 }
 #implement .contain_add{
-    width: 430px;
+    width: 35%;
     height: 330px;
     float: left;
     clear: right;
-    margin-left: 65px;
+    /*margin-left: 65px;*/
     padding: 10px 0px;
     background: #e4dada;
 }
@@ -139,12 +138,11 @@ h2{
     color: white;
 }
 #implement #search {
-    width: 730px;
+    width: 60%;
     height: 400px;
     float: right;
 }
 #implement #search .tab{
-    width: 650px;
     padding: 125px 30px 30px;
     border: 1px solid black;
     background: #e6e6e6;

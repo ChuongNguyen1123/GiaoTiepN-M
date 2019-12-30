@@ -31,30 +31,31 @@
 
 <div id="design">
     <div id="contain">
-        <h2>Design</h2>
-    </div>
-    <div class="design-pager">
-        <h2 style="text-align: center">Design on paper</h2>
-        <img src="../img_lap3/img_ex2/design_page.jpg" height="700" width="634"/>
-        <div class="btn-down">
-            <button>
-                <a href="../img_lap3/img_ex2/design_page.jpg" download="lap3_ex2_design_page.jpg">Download</a>
+        <h2 style="margin-left: 100px">Design</h2>
+
+        <div class="design-pager">
+            <h2 style="text-align: center">Design on paper</h2>
+            <img src="../img_lap3/img_ex2/design_page.jpg" height="700" style="width: 100%"/>
+            <div class="btn-down">
+                <button>
+                    <a href="../img_lap3/img_ex2/design_page.jpg" download="lap3_ex2_design_page.jpg">Download</a>
+                </button>
+            </div>
+        </div>
+        <div class="design-figma">
+            <h2 style="text-align: center">Design on figma</h2>
+            <img src="../img_lap3/img_ex2/design_figma.jpg" height="700" style="width: 100%"/>
+            <div class="btn-down">
+                <button>
+                    <a href="../img_lap3/img_ex2/design_figma.jpg" download="lap3_ex2_design_figma.jpg">Download</a>
+                </button>
+            </div>
+        </div>
+        <div class="dowall">
+            <button class="btn">
+                <a href="../img_lap3/img_ex2/17130016_Design_ex2.7z" download="17130016_Design_ex2.7z">Download All</a>
             </button>
         </div>
-    </div>
-    <div class="design-figma">
-        <h2 style="text-align: center">Design on figma</h2>
-        <img src="../img_lap3/img_ex2/design_figma.jpg" height="700" width="634"/>
-        <div class="btn-down">
-            <button>
-                <a href="../img_lap3/img_ex2/design_figma.jpg" download="lap3_ex2_design_figma.jpg">Download</a>
-            </button>
-        </div>
-    </div>
-    <div class="dowall">
-        <button class="btn">
-            <a href="../img_lap3/img_ex2/17130016_Design_ex2.7z" download="17130016_Design_ex2.7z">Download All</a>
-        </button>
     </div>
 </div>
 
@@ -81,26 +82,31 @@
             </ul>
         </div>
         <div class="el">
-        <p style="font-size: 20px; color: white; text-align: center">Trận đấu tiêu điểm của tuần</p>
-        <h2 style="font-size: 30px; color: #d13400; text-align: center; margin-top: 50px; font-style: italic">El Clasico</h2>
-        <p style="font-size: 20px; color: white; text-align: center; font-style: italic; margin-top: 320px">2h45 20/10/2019</p>
-    </div>
+            <p style="font-size: 20px; color: white; text-align: center">Trận đấu tiêu điểm của tuần</p>
+            <h2 style="font-size: 30px; color: #d13400; text-align: center; margin-top: 50px; font-style: italic">El
+                Clasico</h2>
+            <p style="font-size: 20px; color: white; text-align: center; font-style: italic; margin-top: 320px">2h45
+                20/10/2019</p>
+        </div>
         <div style="width: 100%; height: 50px; margin-top: 30px">
             <h2 style="font-size: 20px; text-align: center">Các trận đấu hấp dẫn khác trong tuần</h2>
         </div>
         <div class="hinh">
             <h2 style="text-align: center; color: #af110e">MU vs LIV</h2>
-            <img src="../img_lap3/img_ex2/diem-nong-mu-liverpool-1.jpg" style="width: 100%; height: 300px; margin-top: -17px"/>
+            <img src="../img_lap3/img_ex2/diem-nong-mu-liverpool-1.jpg"
+                 style="width: 100%; height: 300px; margin-top: -17px"/>
             <p style="font-size: 20px; text-align: center; font-style: italic">1h45 19/10/2019</p>
         </div>
         <div class="hinh">
             <h2 style="text-align: center; color: #af110e">JUV vs ACM</h2>
-            <img src="../img_lap3/img_ex2/Italian-Supercoppa-tv.jpg" style="width: 100%; height: 300px; margin-top: -17px"/>
+            <img src="../img_lap3/img_ex2/Italian-Supercoppa-tv.jpg"
+                 style="width: 100%; height: 300px; margin-top: -17px"/>
             <p style="font-size: 20px; text-align: center; font-style: italic">1h45 19/10/2019</p>
         </div>
         <div class="hinh">
             <h2 style="text-align: center; color: #af110e">CHE VS ARS</h2>
-            <img src="../img_lap3/img_ex2/chelsea-vs-arsenal_mya9uikwhuuk13wsatzk4mw7h.jpg" style="width: 100%; height: 300px; margin-top: -17px"/>
+            <img src="../img_lap3/img_ex2/chelsea-vs-arsenal_mya9uikwhuuk13wsatzk4mw7h.jpg"
+                 style="width: 100%; height: 300px; margin-top: -17px"/>
             <p style="font-size: 20px; text-align: center; font-style: italic">12H45 19/10/2019</p>
         </div>
     </div>
@@ -110,7 +116,7 @@
     var header = document.getElementById("menu-lab");
     var btns = header.getElementsByClassName("menu-li");
     for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
+        btns[i].addEventListener("click", function () {
             var current = document.getElementsByClassName("action");
             current[0].className = current[0].className.replace(" action", "");
             this.className += " action";
@@ -122,7 +128,7 @@
     var header = document.getElementById("menu-ex2");
     var btns = header.getElementsByClassName("menu-a-ex2");
     for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
+        btns[i].addEventListener("click", function () {
             var current = document.getElementsByClassName("ac");
             current[0].className = current[0].className.replace(" ac", "");
             this.className += " ac";

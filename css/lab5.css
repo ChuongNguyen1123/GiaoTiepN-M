@@ -1,0 +1,151 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Tahoma;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+.nav-tabs {
+    width: 100%;
+    height: 50px;
+    /*background: #7FB0FF;*/
+    background-image: -webkit-linear-gradient(0deg, #f39af5 0%, #AB6FAD 100%);
+}
+
+.nav-tabs li a {
+    font-size: 22px;
+    padding: 12px 25px;
+    line-height: 50px;
+    text-decoration: none;
+    color: yellow;
+}
+
+.nav-tabs li .ac, .menu-li:hover {
+    background: #766dff;
+    /*color: black;*/
+}
+
+.nav-tabs li a:hover {
+    background: #766dff;
+    /*color: black;*/
+}
+#requirement {
+    width: 100%;
+    height: 600px;
+    padding-top: 120px;
+    color: white;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+
+.container {
+    width: 1250px;
+    height: 900px;
+    margin-left: 65px;
+}
+#design{
+    width: 100%;
+    height: 1500px;
+    padding-top: 120px;
+    color: white;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+#design #contain{
+    margin-left: 100px;
+}
+#design .design-pager{
+    width: 47%;
+    overflow: auto;
+    float: left;
+    clear: right;
+    margin-left: 1%;
+}
+.btn-down{
+    width: 30%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+#design .design-figma{
+    width: 47%;
+    overflow: auto;
+    float: right;
+    margin-right: 1%;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: red;
+    border: 1px solid #AB6FAD;
+    border-radius: 10px;
+}
+button:hover{
+    background: #ffa2a2;
+    cursor: pointer;
+}
+button a{
+    padding: 11px 45px;
+    margin-left: -6px;
+    text-decoration: none!important;
+    color: #88f3ff;
+    font-size: 15px;
+}
+button a:hover{
+    color: #6a0b6d;
+}
+#design .dowall{
+    width: 25%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+#design .dowall .btn-downAll{
+    width: 100%;
+    height: 50px;
+    background: #a00000;
+    border: 2px solid #ffe603;
+    border-radius: 10px;
+}
+#design .dowall .btn-downAll:hover{
+    background: #ad8200;
+    cursor: pointer;
+}
+#design .dowall .btn-downAll a{
+    font-size: 18px;
+    color: #15fe78;
+    text-decoration: none;
+}
+#implement{
+    width: 100%;
+    overflow: auto;
+}
+.btn{
+    width: 20%;
+    float: left;
+    margin: 6px;
+    outline: none;
+}
+.btn:hover{
+    background: #F7F7F7;
+    text-decoration: none;
+    cursor: auto;
+    color: black;
+}
+.a:hover{
+    color: #c395ff!important;
+    cursor: pointer;
+}

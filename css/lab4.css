@@ -1,0 +1,358 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Tahoma
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+.nav-tabs {
+    width: 100%;
+    height: 50px;
+    /*background: #7FB0FF;*/
+    background-image: -webkit-linear-gradient(0deg, #f39af5 0%, #AB6FAD 100%);
+}
+
+.nav-tabs li a {
+    font-size: 22px;
+    padding: 12px 25px;
+    line-height: 50px;
+    text-decoration: none;
+    color: yellow;
+}
+
+.nav-tabs li .ac, .menu-li:hover {
+    background: #766dff;
+    /*color: black;*/
+}
+
+.nav-tabs li a:hover {
+    background: #766dff;
+    /*color: black;*/
+}
+#requirement {
+    width: 100%;
+    height: 600px;
+    padding-top: 120px;
+    color: white;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+
+.container {
+    width: 1250px;
+    height: 900px;
+    margin-left: 65px;
+}
+#design{
+    width: 100%;
+    height: 1500px;
+    padding-top: 120px;
+    color: white;
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+#design #contain{
+    margin-left: 100px;
+}
+#design .design-pager{
+    width: 47%;
+    overflow: auto;
+    float: left;
+    clear: right;
+    margin-left: 1%;
+}
+.btn-down{
+    width: 30%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+#design .design-figma{
+    width: 47%;
+    overflow: auto;
+    float: right;
+    margin-right: 1%;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: red;
+    border: 1px solid #AB6FAD;
+    border-radius: 10px;
+}
+button:hover{
+    background: #ffa2a2;
+    cursor: pointer;
+}
+button a{
+    padding: 11px 45px;
+    margin-left: -6px;
+    text-decoration: none!important;
+    color: #88f3ff;
+    font-size: 15px;
+}
+button a:hover{
+    color: #6a0b6d;
+}
+#design .dowall{
+    width: 25%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 30px;
+}
+#design .dowall .btn{
+    width: 100%;
+    height: 50px;
+    background: #a00000;
+    border: 2px solid #ffe603;
+    border-radius: 10px;
+}
+#design .dowall .btn:hover{
+    background: #ad8200;
+    cursor: pointer;
+}
+#design .dowall .btn a{
+    font-size: 18px;
+    color: #15fe78;
+    text-decoration: none;
+}
+#implement{
+    width: 100%;
+    overflow: auto;
+}
+#container_top {
+    height: 100px;
+    border-top: 1px solid black;
+    width: 100%;
+}
+#container_top .call_us {
+    height: 30px;
+    float: top;
+}
+#container_top .call_us .right_call_us {
+    float: right;
+    margin-right: 165px;
+}
+#container_top .call_us .right_call_us .text-call{
+    float: left;
+    color: #64718C;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-top: 12px
+}
+#container_top .call_us .right_call_us .text-phone{
+    float: left;
+    color: #64718C;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-top:9px
+}
+#container_top .call_us .right_call_us .top-icon{
+    float: left;
+    color: #6E7F9A;
+    font-size: 22px;
+    margin-top: 5px;
+}
+#container_top .belle {
+    height: 65px;
+}
+#container_top .belle .left_logo {
+    float: left;
+    margin-left: 200px;
+}
+#container_top .belle .right_drop {
+    float: right;
+    width: 825px;
+}
+#menu {
+    height: 58px;
+    width: 100%;
+    margin-top: -5px;
+    /*background: darkred;*/
+}
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+#menu ul li {
+    list-style-type: none;
+    float: left;
+    padding: 15px 0 15px 0;
+    margin-right: 10px;
+}
+#menu ul li:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #FF6600;
+}
+#menu ul li a {
+    margin: 0px 10px 0px 10px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+#menu ul li:hover a {
+
+}
+#menu .sub ul {
+    position: absolute;
+    top: 2370px;
+    float: left;
+    /*-------------*/
+    visibility: hidden;
+    z-index: 1;
+}
+#menu .sub:hover ul {
+    visibility: visible;
+}
+#menu .sub:hover ul li a {
+    color: #333333;
+}
+#menu .sub ul li {
+    float: none;
+    border: 1px solid #9d9d9d;
+    border-top: 3px solid #FF6600;
+    padding: 10px 0px;
+    background: white;
+}
+#menu .sub ul li a {
+    color: #99A1B3;
+    font-size: 15px;
+    text-align: center;
+    padding-right: 15px;
+}
+#menu .sub:hover ul li:hover {
+    background: white;
+}
+#menu .sub:hover ul li:hover a {
+    color: #FF6600;
+}
+#myCarousel{
+    top: -15px;
+    border-top: 3px solid #ADB4C2;
+    background-image: url("images/Capture.png");
+    background-repeat: no-repeat;
+}
+.mySlides {
+    display:none;
+}
+.mauris {
+    height: 175px;
+    width: 85%;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+.c_mari {
+    float: left;
+    /*border: 1px solid black;*/
+    margin-right: 0px;
+}
+.c_mari .ic_name .lef {
+    float: left;
+}
+.c_mari .ic_name p {
+    margin-left: 10px;
+    color: #273472;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.p_mauris {
+    width: 190px;
+    height: 70px;
+    float: left;
+    color: #6E3D6E;
+    margin-left: 50px;
+    font-size: 15px;
+}
+.perfect {
+    height: 96px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: -10px;
+}
+.perfect .left_per {
+    float: left;
+}
+.perfect .right_per {
+    float: right;
+}
+.perfect button {
+    background: #E9A623;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    width: 140px;
+    height: 35px;
+    margin-right: 25px;
+    margin-top: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.perfect button:hover {
+    background: #e98d13;
+    color: white;
+}
+.relative {
+    padding-left: 155px;
+    margin-top: 50px;
+}
+.relative .sem{
+    background-image: url("../lab4/images/3.png");
+    width: 220px;
+    height: 205px;
+    border: 1px solid #E7E7E7;
+    float: left;
+    margin-right: 23px;
+    overflow: hidden;
+    /*bộ 3*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.75);
+}
+.relative .sem1{
+    margin-right: 0px;
+}
+.relative .sem .cd{
+    position: absolute;
+
+}
+.relative .sem img {
+    background-color: #00000094;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.relative .sem:hover img {
+    bottom: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#footer{
+    margin-top: 220px;
+    width: 100%;
+    height: 50px;
+    background: black;
+}
